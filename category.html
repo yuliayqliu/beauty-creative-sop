@@ -35,13 +35,13 @@
     <div class="cat-crumb">
       <a href="index.html#/home">首页</a>
       <span class="crumb-arrow">›</span>
-      <span id="catName">淡斑祛斑</span>
+      <span id="catName">淡化斑点</span>
     </div>
     <div class="cat-detail-title-row">
       <div class="cat-detail-emoji" id="catEmoji">✨</div>
       <div>
-        <h1 class="cat-detail-title" id="catTitle">淡斑祛斑 · 创意 SOP</h1>
-        <p class="cat-detail-sub" id="catSub">基于丽人大盘 Top100 中淡斑品类样本（35% 消耗占比）拆解</p>
+        <h1 class="cat-detail-title" id="catTitle">淡化斑点 · 创意 SOP</h1>
+        <p class="cat-detail-sub" id="catSub">基于丽人大盘 Top100 中淡化斑点品类样本（28% 消耗占比）拆解</p>
       </div>
     </div>
     <div class="cat-detail-stats">
@@ -196,12 +196,18 @@
 <script>
 // 根据 ?cat= 渲染品类信息
 const CATS = {
-  '淡斑': { emoji:'✨', name:'淡斑祛斑', sub:'基于丽人大盘 Top100 中淡斑品类样本（35% 消耗占比）拆解', ctr:'3.21%', cvr:'1.58%', cost:'¥4,213', time:'47s' },
-  '淡皱': { emoji:'◐', name:'抗衰淡皱', sub:'基于丽人大盘 Top100 中淡皱品类样本（30% 消耗占比）拆解', ctr:'2.96%', cvr:'1.42%', cost:'¥5,128', time:'45s' },
-  '眼袋': { emoji:'◉', name:'淡化眼袋', sub:'基于丽人大盘 Top100 中眼袋品类样本（20% 消耗占比）拆解', ctr:'3.82%', cvr:'1.65%', cost:'¥7,674', time:'42s' },
-  '纹眉': { emoji:'✎', name:'纹眉纹绣', sub:'基于丽人大盘 Top100 中纹眉品类样本（10% 消耗占比）拆解', ctr:'2.45%', cvr:'1.21%', cost:'¥2,816', time:'38s' },
-  '美发': { emoji:'✂', name:'美发美甲', sub:'基于丽人大盘 Top100 中美发美甲品类样本拆解', ctr:'2.18%', cvr:'0.94%', cost:'¥1,983', time:'40s' },
-  'SPA':  { emoji:'✦', name:'美容SPA',  sub:'基于丽人大盘 Top100 中SPA品类样本拆解', ctr:'2.62%', cvr:'1.18%', cost:'¥2,471', time:'46s' },
+  '淡斑':   { emoji:'✨', name:'淡化斑点',   sub:'基于丽人大盘 Top100 中淡化斑点品类样本（28% 消耗占比）拆解', ctr:'3.21%', cvr:'1.58%', cost:'¥4,213', time:'47s' },
+  '眼袋':   { emoji:'◉', name:'淡化眼袋',   sub:'基于丽人大盘 Top100 中眼袋品类样本（18% 消耗占比）拆解', ctr:'3.82%', cvr:'1.65%', cost:'¥7,674', time:'42s' },
+  '淡皱':   { emoji:'◐', name:'抗衰淡皱',   sub:'基于丽人大盘 Top100 中淡皱品类样本（24% 消耗占比）拆解', ctr:'2.96%', cvr:'1.42%', cost:'¥5,128', time:'45s' },
+  '纹眉':   { emoji:'✎', name:'纹眉纹绣',   sub:'基于丽人大盘 Top100 中纹眉品类样本（7% 消耗占比）拆解', ctr:'2.45%', cvr:'1.21%', cost:'¥2,816', time:'38s' },
+  '假发':   { emoji:'✂', name:'假发养发',   sub:'基于丽人大盘 Top100 中假发养发品类样本（6% 消耗占比）拆解', ctr:'2.35%', cvr:'1.05%', cost:'¥2,180', time:'40s' },
+  '妊娠纹': { emoji:'◑', name:'淡化妊娠纹', sub:'基于丽人大盘 Top100 中妊娠纹品类样本（5% 消耗占比）拆解', ctr:'2.32%', cvr:'1.15%', cost:'¥3,256', time:'44s' },
+  '痘痘':   { emoji:'◔', name:'淡化痘痘',   sub:'基于丽人大盘 Top100 中痘痘品类样本（6% 消耗占比）拆解', ctr:'3.05%', cvr:'1.08%', cost:'¥2,985', time:'41s' },
+  '按摩':   { emoji:'✦', name:'按摩SPA',    sub:'基于丽人大盘 Top100 中按摩SPA品类样本（4% 消耗占比）拆解', ctr:'2.42%', cvr:'1.05%', cost:'¥2,150', time:'43s' },
+  '瑜伽':   { emoji:'⟁', name:'瑜伽健身',   sub:'基于丽人大盘 Top100 中瑜伽健身品类样本（2% 消耗占比）拆解', ctr:'2.08%', cvr:'0.82%', cost:'¥1,720', time:'40s' },
+  // 兼容旧链接
+  '美发':   { emoji:'✂', name:'假发养发',   sub:'基于丽人大盘 Top100 中假发养发品类样本（6% 消耗占比）拆解', ctr:'2.35%', cvr:'1.05%', cost:'¥2,180', time:'40s' },
+  'SPA':    { emoji:'✦', name:'按摩SPA',    sub:'基于丽人大盘 Top100 中按摩SPA品类样本（4% 消耗占比）拆解', ctr:'2.42%', cvr:'1.05%', cost:'¥2,150', time:'43s' },
 };
 const cat = new URLSearchParams(location.search).get('cat') || '淡斑';
 const c = CATS[cat] || CATS['淡斑'];
