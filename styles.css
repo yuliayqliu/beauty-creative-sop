@@ -704,18 +704,6 @@ input, select, textarea { font-family: inherit; font-size: 14px; }
   padding-bottom: 14px;
   box-shadow: 0 6px 12px -8px rgba(15, 23, 42, 0.08), 0 1px 0 #ececf2;
 }
-/* 顶部哨兵：向上延伸 56px，覆盖 sticky-head 与 topbar 之间任何可能的空白
-   （即使 topbar 因滚动容器问题被滚走，这段也保持灰底，不会露出下方内容） */
-.sticky-head::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -56px;
-  height: 56px;
-  background: #f6f7fb;
-  pointer-events: none;
-}
 .sticky-head .page-title {
   margin-bottom: 14px;
 }
