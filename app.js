@@ -1,5 +1,5 @@
 // ========== Hash 路由：多页切换 ==========
-const ROUTES = ['home', 'dashboard', 'case', 'trend', 'diagnose', 'report', 'manual'];
+const ROUTES = ['home', 'dashboard', 'case', 'digital', 'image', 'diagnose', 'manual'];
 const DEFAULT_ROUTE = 'home';
 
 function getRouteFromHash() {

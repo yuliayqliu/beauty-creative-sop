@@ -14,11 +14,11 @@
     <div class="brand">腾讯丽人赛道创意分析平台</div>
     <nav class="topnav">
       <a href="#/home" class="nav-item" data-route="home"><span class="nav-icon">⌂</span>首页</a>
-      <a href="#/dashboard" class="nav-item" data-route="dashboard"><span class="nav-icon">▦</span>大盘数据</a>
-      <a href="#/case" class="nav-item" data-route="case"><span class="nav-icon">◫</span>爆款案例库</a>
-      <a href="#/trend" class="nav-item" data-route="trend"><span class="nav-icon">◰</span>近期素材</a>
-      <a href="#/diagnose" class="nav-item" data-route="diagnose"><span class="nav-icon">◎</span>素材自分析</a>
-      <a href="#/report" class="nav-item" data-route="report"><span class="nav-icon">◩</span>示例报告</a>
+      <a href="#/dashboard" class="nav-item" data-route="dashboard"><span class="nav-icon">▦</span>各品类大盘数据</a>
+      <a href="#/case" class="nav-item" data-route="case"><span class="nav-icon">◫</span>爆款脚本</a>
+      <a href="#/digital" class="nav-item" data-route="digital"><span class="nav-icon">◉</span>数字人专区</a>
+      <a href="#/image" class="nav-item" data-route="image"><span class="nav-icon">▤</span>图片专区</a>
+      <a href="#/diagnose" class="nav-item" data-route="diagnose"><span class="nav-icon">◎</span>素材自诊断</a>
     </nav>
     <div class="topright">
       <div class="user">
@@ -76,30 +76,34 @@
       <div class="v3-tool-grid">
         <a class="v3-tool" href="#/dashboard">
           <span class="v3-tool-ico">▦</span>
-          <span class="v3-tool-txt"><b>大盘数据</b><i>行业基准线 / 黄金三秒</i></span>
+          <span class="v3-tool-txt"><b>各品类大盘数据</b><i>行业基准线 / 黄金三秒</i></span>
         </a>
-        <a class="v3-tool" href="#/trend">
-          <span class="v3-tool-ico">◰</span>
-          <span class="v3-tool-txt"><b>近期素材趋势</b><i>本周上升 / 平稳 / 疲劳</i></span>
+        <a class="v3-tool" href="#/case">
+          <span class="v3-tool-ico">◫</span>
+          <span class="v3-tool-txt"><b>爆款脚本</b><i>分品类爆款脚本库</i></span>
+        </a>
+        <a class="v3-tool" href="#/digital">
+          <span class="v3-tool-ico">◉</span>
+          <span class="v3-tool-txt"><b>数字人专区</b><i>形象库 / 真人前贴 / 一键生成</i></span>
+        </a>
+        <a class="v3-tool" href="#/image">
+          <span class="v3-tool-ico">▤</span>
+          <span class="v3-tool-txt"><b>图片专区</b><i>朋友圈广告图 / 封面图模板</i></span>
         </a>
         <a class="v3-tool" href="#/diagnose">
           <span class="v3-tool-ico">◎</span>
-          <span class="v3-tool-txt"><b>素材自分析</b><i>填数据一键诊断</i></span>
-        </a>
-        <a class="v3-tool" href="#/report">
-          <span class="v3-tool-ico">◩</span>
-          <span class="v3-tool-txt"><b>示例报告</b><i>真实爆款拆解样例</i></span>
+          <span class="v3-tool-txt"><b>素材自诊断</b><i>填数据一键诊断</i></span>
         </a>
       </div>
     </div>
   </main>
 </div>
 
-<!-- =============== 页面 1：大盘数据 =============== -->
+<!-- =============== 页面 1：各品类大盘数据 =============== -->
 <div class="page" data-page="dashboard">
   <section class="page-head sticky-head">
     <div class="container">
-      <h1 class="page-title">行业大盘数据</h1>
+      <h1 class="page-title">各品类大盘数据</h1>
       <div class="industry-tabs anchor-tabs">
         <button class="ind-tab active" data-anchor="cat-liren">丽人</button>
         <button class="ind-tab" data-anchor="cat-danban">淡化斑点</button>
@@ -438,11 +442,11 @@
   </main>
 </div>
 
-<!-- =============== 页面 2：爆款案例库 =============== -->
+<!-- =============== 页面 2：爆款脚本 =============== -->
 <div class="page" data-page="case">
   <section class="page-head">
     <div class="container">
-      <h1 class="page-title">分品类爆款创意 SOP</h1>
+      <h1 class="page-title">分品类爆款脚本</h1>
       <div class="industry-tabs">
         <button class="ind-tab active">全部</button>
         <button class="ind-tab">淡化斑点</button>
@@ -479,15 +483,15 @@
   </main>
 </div>
 
-<!-- =============== 页面 3：近期素材 =============== -->
-<div class="page" data-page="trend">
+<!-- =============== 页面 3：数字人专区 =============== -->
+<div class="page" data-page="digital">
   <section class="page-head">
     <div class="container">
-      <h1 class="page-title">近期平台素材趋势</h1>
+      <h1 class="page-title">数字人专区</h1>
       <div class="industry-tabs">
-        <button class="ind-tab active">本周</button>
-        <button class="ind-tab">近30天</button>
-        <button class="ind-tab">近90天</button>
+        <button class="ind-tab active">数字人形象库</button>
+        <button class="ind-tab">真人前贴口播</button>
+        <button class="ind-tab">脚本→数字人视频</button>
       </div>
     </div>
   </section>
@@ -495,24 +499,26 @@
   <main class="container main-area">
     <div class="panel">
       <div class="panel-head">
-        <div class="panel-title"><span class="dot purple-dot"></span>近期平台素材趋势</div>
-        <div class="date-range light">本周更新 · 2026-05-18 至 2026-05-24</div>
+        <div class="panel-title"><span class="dot purple-dot"></span>数字人形象库</div>
+        <div class="date-range light">点击形象 → 一键生成口播视频</div>
       </div>
       <div class="trend-grid">
-        <div class="trend-card hot"><div class="trend-tag pink-tag">▲ 上升</div><div class="trend-name">街头采访式真人口播</div><div class="trend-desc">美容师走出门店，街头采访真实顾客，拉高信任感与点击率。</div></div>
-        <div class="trend-card hot"><div class="trend-tag pink-tag">▲ 上升</div><div class="trend-name">价格清单大字快闪</div><div class="trend-desc">"法令纹368 / 抬头纹368 / 苹果肌368"全屏价格刷屏。</div></div>
-        <div class="trend-card"><div class="trend-tag green-tag">● 平稳</div><div class="trend-name">门店开业排队</div><div class="trend-desc">仍是淡斑、淡皱品类的稳定爆款形式。</div></div>
-        <div class="trend-card down"><div class="trend-tag gray-tag">▼ 疲劳</div><div class="trend-name">纯AI数字人口播</div><div class="trend-desc">CTR 持续下滑，建议替换为真人或真人前贴口播。</div></div>
+        <div class="trend-card hot"><div class="trend-tag pink-tag">推荐</div><div class="trend-name">温柔阴柔型男主播</div><div class="trend-desc">25-32岁，白衬衫精致男，丽人行业最爆量人设，CTR均值3.2%。</div></div>
+        <div class="trend-card hot"><div class="trend-tag pink-tag">推荐</div><div class="trend-name">亲和力女美容师</div><div class="trend-desc">25-30岁，白色工作服+一次性手套，操作类素材首选。</div></div>
+        <div class="trend-card"><div class="trend-tag green-tag">常用</div><div class="trend-name">中老年顾客见证</div><div class="trend-desc">45-60岁阿姨真实见证，淡斑/淡皱品类信任感拉满。</div></div>
+        <div class="trend-card"><div class="trend-tag green-tag">常用</div><div class="trend-name">新闻播报型主持人</div><div class="trend-desc">权威感开场，"附近火爆的眼袋店"经典句式适用。</div></div>
+        <div class="trend-card"><div class="trend-tag gray-tag">慎用</div><div class="trend-name">纯AI数字人口播</div><div class="trend-desc">CTR持续下滑，建议替换为真人或真人前贴口播。</div></div>
+        <div class="trend-card"><div class="trend-tag green-tag">新增</div><div class="trend-name">真人前贴+数字人后段</div><div class="trend-desc">前3秒真人出镜锁定信任，后段数字人讲解，性价比最高。</div></div>
       </div>
     </div>
   </main>
 </div>
 
-<!-- =============== 页面 4：素材自分析 =============== -->
+<!-- =============== 页面 4：素材自诊断 =============== -->
 <div class="page" data-page="diagnose">
   <section class="page-head">
     <div class="container">
-      <h1 class="page-title">素材自分析诊断台</h1>
+      <h1 class="page-title">素材自诊断台</h1>
       <div class="industry-tabs">
         <button class="ind-tab active">表单诊断</button>
         <button class="ind-tab">链接诊断</button>
@@ -524,7 +530,7 @@
   <main class="container main-area">
     <div class="panel">
       <div class="panel-head">
-        <div class="panel-title"><span class="dot green-dot"></span>素材自分析诊断台</div>
+        <div class="panel-title"><span class="dot green-dot"></span>素材自诊断台</div>
         <div class="date-range light">上传你的素材，我们告诉你为什么数据差</div>
       </div>
 
@@ -575,17 +581,15 @@
   </main>
 </div>
 
-<!-- =============== 页面 5：示例报告 =============== -->
-<div class="page" data-page="report">
+<!-- =============== 页面 5：图片专区 =============== -->
+<div class="page" data-page="image">
   <section class="page-head">
     <div class="container">
-      <h1 class="page-title">示例诊断报告</h1>
+      <h1 class="page-title">图片专区</h1>
       <div class="industry-tabs">
-        <button class="ind-tab active">全部品类</button>
-        <button class="ind-tab">淡斑</button>
-        <button class="ind-tab">淡皱</button>
-        <button class="ind-tab">眼袋</button>
-        <button class="ind-tab">纹眉</button>
+        <button class="ind-tab active">朋友圈广告图</button>
+        <button class="ind-tab">视频封面图</button>
+        <button class="ind-tab">落地页头图</button>
       </div>
     </div>
   </section>
@@ -593,33 +597,33 @@
   <main class="container main-area">
     <div class="panel">
       <div class="panel-head">
-        <div class="panel-title"><span class="dot orange-dot"></span>示例诊断报告</div>
-        <div class="date-range light">真实分析样例</div>
+        <div class="panel-title"><span class="dot orange-dot"></span>爆款图片模板库</div>
+        <div class="date-range light">基于丽人大盘 Top 图片素材沉淀</div>
       </div>
 
       <div class="report-card">
         <div class="report-head">
-          <div class="report-name">某淡皱品类30秒口播视频</div>
-          <div class="report-meta">日均¥7,485 · CTR 2.96% · CVR 1.42%</div>
+          <div class="report-name">价格锤型朋友圈广告图（淡皱）</div>
+          <div class="report-meta">CTR 2.85% · 点赞率 1.42% · 推荐指数 ★★★★★</div>
         </div>
         <div class="report-grid">
-          <div class="rg-item"><div class="rg-label">核心判断</div><div class="rg-text">高点击高转化型爆款，黄金三秒"白手套+价格锤"是核心拉量点。</div></div>
-          <div class="rg-item"><div class="rg-label">脚本结构</div><div class="rg-text">0-3s价格锤 / 4-15s操作特写 / 16-30s价格清单+到店CTA</div></div>
-          <div class="rg-item"><div class="rg-label">爆量因子</div><div class="rg-text">真实中老年顾客 + 白手套操作 + 368元价格锤 + "全国连锁300+"</div></div>
-          <div class="rg-item"><div class="rg-label">复用方向</div><div class="rg-text">替换为眼袋468元版本，保留白手套操作镜头与价格清单结构。</div></div>
+          <div class="rg-item"><div class="rg-label">视觉构图</div><div class="rg-text">左侧顾客面部特写 + 右侧368元红色价格锤，3:4竖图。</div></div>
+          <div class="rg-item"><div class="rg-label">文案结构</div><div class="rg-text">主标"科技淡皱仅368" + 副标"法令纹/抬头纹/苹果肌全包"。</div></div>
+          <div class="rg-item"><div class="rg-label">配色规范</div><div class="rg-text">暖白底色 + 红色价格 + 黑色主标，合规底字白底灰字。</div></div>
+          <div class="rg-item"><div class="rg-label">复用方向</div><div class="rg-text">替换为淡斑386/眼袋468版本，保留价格锤位置与配色。</div></div>
         </div>
       </div>
 
       <div class="report-card">
         <div class="report-head">
-          <div class="report-name">某淡斑品类45秒门店开业视频</div>
-          <div class="report-meta">日均¥12,398 · CTR 3.45% · CVR 1.78%</div>
+          <div class="report-name">门店开业型视频封面（淡斑）</div>
+          <div class="report-meta">CTR 3.12% · 三秒完播率 65% · 推荐指数 ★★★★★</div>
         </div>
         <div class="report-grid">
-          <div class="rg-item"><div class="rg-label">核心判断</div><div class="rg-text">超头部爆量素材，社交证明（开业排队）+价格锤双驱动。</div></div>
-          <div class="rg-item"><div class="rg-label">脚本结构</div><div class="rg-text">0-3s开业鞭炮 / 4-25s操作特写 / 26-45s顾客见证+价格</div></div>
-          <div class="rg-item"><div class="rg-label">爆量因子</div><div class="rg-text">198元低门槛价格锤 + 50分钟时长承诺 + 真实顾客出镜</div></div>
-          <div class="rg-item"><div class="rg-label">复用方向</div><div class="rg-text">替换为眼袋开业版本，保留鞭炮镜头与50分钟话术。</div></div>
+          <div class="rg-item"><div class="rg-label">视觉构图</div><div class="rg-text">门店外景+鞭炮+排队人群，9:16竖屏，黄底大字"开业大吉"。</div></div>
+          <div class="rg-item"><div class="rg-label">文案结构</div><div class="rg-text">主标"淡斑店开业大吉" + 副标"全程50分钟仅198元"。</div></div>
+          <div class="rg-item"><div class="rg-label">配色规范</div><div class="rg-text">黄底红字 + 价格高亮 + 底部"效果因人而异"合规白字。</div></div>
+          <div class="rg-item"><div class="rg-label">复用方向</div><div class="rg-text">可替换为眼袋/淡皱开业版，保留鞭炮+排队元素。</div></div>
         </div>
       </div>
     </div>
@@ -640,16 +644,16 @@
         <div class="panel-title"><span class="dot pink-dot"></span>平台使用指引</div>
       </div>
       <div class="manual-body">
-        <h3>① 大盘数据</h3>
+        <h3>① 各品类大盘数据</h3>
         <p>查看丽人行业月度大盘指标、黄金三秒分布、品类消耗占比，作为优化参考基准线。</p>
-        <h3>② 爆款案例库</h3>
-        <p>分品类查看 Top 爆款 SOP，每个品类含 CTR/CVR/日均消耗三大指标，可直接复用脚本结构。</p>
-        <h3>③ 近期素材</h3>
-        <p>本周/近30天上升、平稳、疲劳的素材形式，决定下一条素材方向。</p>
-        <h3>④ 素材自分析</h3>
+        <h3>② 爆款脚本</h3>
+        <p>分品类查看 Top 爆款脚本，每个品类含 CTR/CVR/日均消耗三大指标，可直接复用脚本结构。</p>
+        <h3>③ 数字人专区</h3>
+        <p>数字人形象库 + 真人前贴口播拼接，点击形象一键生成口播视频。</p>
+        <h3>④ 图片专区</h3>
+        <p>朋友圈广告图、视频封面图、落地页头图爆款模板，含视觉构图与配色规范。</p>
+        <h3>⑤ 素材自诊断</h3>
         <p>填入你的素材数据，平台输出核心判断、问题诊断与下一条怎么拍的建议。</p>
-        <h3>⑤ 示例报告</h3>
-        <p>看真实爆款的拆解样例，照着抄就行。</p>
         <h3>联系我们</h3>
         <p>📮 邮箱：creative@example.com　💬 企业微信：扫码加入丽人创意诊断群　📞 顾问咨询：xxx-xxxx-xxxx</p>
       </div>
