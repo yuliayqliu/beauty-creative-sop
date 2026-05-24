@@ -49,8 +49,43 @@ document.querySelectorAll('.industry-tabs').forEach(group => {
   tabs.forEach(t => t.addEventListener('click', () => {
     tabs.forEach(x => x.classList.remove('active'));
     t.classList.add('active');
+
+    // 锚点跳转：如果Tab有 data-anchor，则平滑滚动到对应区块
+    const anchor = t.dataset.anchor;
+    if (anchor) {
+      const target = document.getElementById(anchor);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
   }));
 });
+
+// ========== 大盘数据：滚动联动高亮品类Tab ==========
+(function setupScrollSpy() {
+  const dashboardPage = document.querySelector('[data-page="dashboard"]');
+  if (!dashboardPage) return;
+  const anchorTabs = dashboardPage.querySelectorAll('.anchor-tabs .ind-tab');
+  const sections = dashboardPage.querySelectorAll('.cat-section');
+  if (!anchorTabs.length || !sections.length) return;
+
+  const observer = new IntersectionObserver(entries => {
+    // 找到当前最靠上且在视口内的section
+    const visible = entries
+      .filter(e => e.isIntersecting)
+      .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+    if (!visible) return;
+    const id = visible.target.id;
+    anchorTabs.forEach(t => {
+      t.classList.toggle('active', t.dataset.anchor === id);
+    });
+  }, {
+    rootMargin: '-160px 0px -55% 0px',
+    threshold: 0
+  });
+
+  sections.forEach(s => observer.observe(s));
+})();
 
 // ========== 素材自分析诊断 ==========
 const form = document.getElementById('diagForm');

@@ -693,3 +693,66 @@ input, select, textarea { font-family: inherit; font-size: 14px; }
 @media (max-width: 640px) {
   .cat-detail-stats, .topvid-grid, .checklist { grid-template-columns: 1fr; }
 }
+
+/* ========== 大盘数据 - 锚点粘性导航 + 版位表格 ========== */
+.sticky-head {
+  position: sticky;
+  top: 56px;
+  z-index: 40;
+  background: #f6f7fb;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ececf2;
+}
+.sticky-head .page-title {
+  margin-bottom: 14px;
+}
+
+.cat-section {
+  scroll-margin-top: 140px;
+  margin-bottom: 24px;
+}
+
+.placement-table {
+  margin-top: 20px;
+  background: #fafbfd;
+  border-radius: 10px;
+  padding: 16px 18px;
+  border: 1px solid #eef0f5;
+}
+.pt-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2329;
+  margin-bottom: 12px;
+}
+.placement-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.placement-table thead th {
+  text-align: left;
+  padding: 10px 12px;
+  background: #f0f2f7;
+  color: #5a6373;
+  font-weight: 600;
+  font-size: 12px;
+  border-bottom: 1px solid #e3e6ec;
+}
+.placement-table thead th:first-child { border-top-left-radius: 6px; }
+.placement-table thead th:last-child { border-top-right-radius: 6px; }
+.placement-table tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eef0f5;
+  color: #2c3340;
+}
+.placement-table tbody tr:last-child td { border-bottom: none; }
+.placement-table tbody tr:hover { background: #f4f6fa; }
+.placement-table tbody td:first-child { font-weight: 500; color: #1f2329; }
+.placement-table tbody td b { color: #ed4c84; font-weight: 600; }
+
+@media (max-width: 1024px) {
+  .placement-table { overflow-x: auto; }
+  .placement-table table { min-width: 720px; }
+}

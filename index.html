@@ -94,98 +94,258 @@
 
 <!-- =============== 页面 1：大盘数据 =============== -->
 <div class="page" data-page="dashboard">
-  <section class="page-head">
+  <section class="page-head sticky-head">
     <div class="container">
       <h1 class="page-title">行业大盘数据</h1>
-      <div class="industry-tabs">
-        <button class="ind-tab active">丽人</button>
-        <button class="ind-tab">纹眉纹绣</button>
-        <button class="ind-tab">抗衰淡皱</button>
-        <button class="ind-tab">淡化眼袋</button>
-        <button class="ind-tab">淡斑祛斑</button>
-        <button class="ind-tab">美发美甲</button>
-        <button class="ind-tab">美容SPA</button>
+      <div class="industry-tabs anchor-tabs">
+        <button class="ind-tab active" data-anchor="cat-liren">丽人</button>
+        <button class="ind-tab" data-anchor="cat-wenmei">纹眉纹绣</button>
+        <button class="ind-tab" data-anchor="cat-kangshuai">抗衰淡皱</button>
+        <button class="ind-tab" data-anchor="cat-yandai">淡化眼袋</button>
+        <button class="ind-tab" data-anchor="cat-danban">淡斑祛斑</button>
+        <button class="ind-tab" data-anchor="cat-meifa">美发美甲</button>
+        <button class="ind-tab" data-anchor="cat-spa">美容SPA</button>
       </div>
     </div>
   </section>
 
   <main class="container main-area">
-    <div class="panel">
-      <div class="panel-head pink">
-        <div class="panel-title"><span class="dot pink-dot"></span>丽人行业月度数据速递</div>
-        <div class="date-range">📅 2026-04-01 至 2026-04-30</div>
-      </div>
 
-      <div class="sub-tabs">
-        <span class="sub-tab-label">数据模块目录</span>
-        <button class="sub-tab active">行业基准线</button>
-        <button class="sub-tab">动态数据</button>
-        <button class="sub-tab">黄金三秒分布</button>
-        <button class="sub-tab">脚本结构分析</button>
-        <button class="sub-tab">品类消耗占比</button>
-        <button class="sub-tab">创意公式库</button>
-        <button class="sub-tab">爆款榜单</button>
-      </div>
+    <!-- ========== 区块①：丽人（总览） ========== -->
+    <section class="cat-section" id="cat-liren">
+      <div class="panel">
+        <div class="panel-head pink">
+          <div class="panel-title"><span class="dot pink-dot"></span>丽人行业 · 整体大盘</div>
+          <div class="date-range">📅 2026-04-01 至 2026-04-30</div>
+        </div>
 
-      <div class="kpi-grid">
-        <div class="kpi-card top-pink">
-          <div class="kpi-head"><span class="kpi-label">爆量素材日均消耗</span><span class="kpi-icon">⊙</span></div>
-          <div class="kpi-value">¥3,569<span class="kpi-unit">起</span></div>
-          <div class="kpi-foot">Top100 中位数</div>
+        <div class="kpi-grid">
+          <div class="kpi-card top-pink">
+            <div class="kpi-head"><span class="kpi-label">爆量素材日均消耗</span></div>
+            <div class="kpi-value">¥3,569<span class="kpi-unit">起</span></div>
+            <div class="kpi-foot">Top100 中位数</div>
+          </div>
+          <div class="kpi-card top-green">
+            <div class="kpi-head"><span class="kpi-label">行业平均CTR</span></div>
+            <div class="kpi-value">2.85<span class="kpi-unit">%</span></div>
+            <div class="kpi-foot">优秀阈值 1.5%</div>
+          </div>
+          <div class="kpi-card top-purple">
+            <div class="kpi-head"><span class="kpi-label">行业平均浅层CVR</span></div>
+            <div class="kpi-value">1.42<span class="kpi-unit">%</span></div>
+            <div class="kpi-foot">优秀阈值 0.8%</div>
+          </div>
+          <div class="kpi-card top-orange">
+            <div class="kpi-head"><span class="kpi-label">平均播放时长</span></div>
+            <div class="kpi-value">47.7<span class="kpi-unit">s</span></div>
+            <div class="kpi-foot">3秒完播率 63% · 快滑率 22%</div>
+          </div>
         </div>
-        <div class="kpi-card top-green">
-          <div class="kpi-head"><span class="kpi-label">优秀素材CTR</span><span class="kpi-icon">◌</span></div>
-          <div class="kpi-value">2.85<span class="kpi-unit">%</span></div>
-          <div class="kpi-foot">行业基准 1.5%</div>
-        </div>
-        <div class="kpi-card top-purple">
-          <div class="kpi-head"><span class="kpi-label">优秀素材浅层CVR</span><span class="kpi-icon">◇</span></div>
-          <div class="kpi-value">1.42<span class="kpi-unit">%</span></div>
-          <div class="kpi-foot">行业基准 0.8%</div>
-        </div>
-        <div class="kpi-card top-orange">
-          <div class="kpi-head"><span class="kpi-label">最佳素材时长</span><span class="kpi-icon">◷</span></div>
-          <div class="kpi-value">47.7<span class="kpi-unit">s</span></div>
-          <div class="kpi-foot">35-55s区间最优</div>
-        </div>
-      </div>
 
-      <div class="info-grid">
-        <div class="info-card">
-          <span class="info-icon pink-bg">♨</span>
-          <div class="info-text"><div class="info-label">Top3 消耗品类</div><div class="info-value">淡斑 35%、淡皱 30%、眼袋 20%</div></div>
-        </div>
-        <div class="info-card">
-          <span class="info-icon blue-bg">≈</span>
-          <div class="info-text"><div class="info-label">主力流量渠道</div><div class="info-value">微信视频号 73.8%</div></div>
-        </div>
-        <div class="info-card">
-          <span class="info-icon green-bg">◐</span>
-          <div class="info-text"><div class="info-label">最优开头类型</div><div class="info-value">痛点特写+价格锤 40%</div></div>
-        </div>
-        <div class="info-card">
-          <span class="info-icon purple-bg">◈</span>
-          <div class="info-text"><div class="info-label">爆款样本量</div><div class="info-value">1000条 / 已分析100条</div></div>
+        <div class="placement-table">
+          <div class="pt-title">📊 各版位表现</div>
+          <table>
+            <thead>
+              <tr><th>版位</th><th>消耗占比</th><th>CTR</th><th>浅层CVR</th><th>平均播放时长</th><th>3秒完播率</th><th>快滑率</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>微信视频号信息流</td><td><b>73.8%</b></td><td>3.12%</td><td>1.58%</td><td>49.2s</td><td>65%</td><td>20%</td></tr>
+              <tr><td>朋友圈广告</td><td>12.5%</td><td>2.45%</td><td>1.25%</td><td>42.1s</td><td>58%</td><td>26%</td></tr>
+              <tr><td>优量汇</td><td>8.3%</td><td>2.18%</td><td>1.12%</td><td>38.5s</td><td>55%</td><td>30%</td></tr>
+              <tr><td>激励视频</td><td>3.2%</td><td>1.85%</td><td>0.95%</td><td>35.8s</td><td>50%</td><td>35%</td></tr>
+              <tr><td>小程序广告</td><td>2.2%</td><td>1.92%</td><td>1.05%</td><td>40.3s</td><td>53%</td><td>32%</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="panel">
-      <div class="panel-head">
-        <div class="panel-title"><span class="dot blue-dot"></span>黄金三秒类型分布</div>
-        <div class="seg-toggle">
-          <button class="seg active">爆量素材</button>
-          <button class="seg">优秀素材</button>
+    <!-- ========== 区块②：纹眉纹绣 ========== -->
+    <section class="cat-section" id="cat-wenmei">
+      <div class="panel">
+        <div class="panel-head">
+          <div class="panel-title"><span class="dot pink-dot"></span>✎ 纹眉纹绣</div>
+          <div class="date-range light">细分：雾眉 / 线条眉 / 美瞳线 / 漂唇</div>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card top-pink"><div class="kpi-head"><span class="kpi-label">爆量日均消耗</span></div><div class="kpi-value">¥2,816</div><div class="kpi-foot">Top100 中位数</div></div>
+          <div class="kpi-card top-green"><div class="kpi-head"><span class="kpi-label">平均CTR</span></div><div class="kpi-value">2.45<span class="kpi-unit">%</span></div><div class="kpi-foot">行业 2.85%</div></div>
+          <div class="kpi-card top-purple"><div class="kpi-head"><span class="kpi-label">平均浅层CVR</span></div><div class="kpi-value">1.21<span class="kpi-unit">%</span></div><div class="kpi-foot">行业 1.42%</div></div>
+          <div class="kpi-card top-orange"><div class="kpi-head"><span class="kpi-label">平均播放时长</span></div><div class="kpi-value">42.3<span class="kpi-unit">s</span></div><div class="kpi-foot">3秒完播 60% · 快滑 25%</div></div>
+        </div>
+
+        <div class="placement-table">
+          <div class="pt-title">📊 各版位表现</div>
+          <table>
+            <thead><tr><th>版位</th><th>消耗占比</th><th>CTR</th><th>浅层CVR</th><th>平均播放时长</th><th>3秒完播率</th><th>快滑率</th></tr></thead>
+            <tbody>
+              <tr><td>微信视频号信息流</td><td><b>78.5%</b></td><td>2.62%</td><td>1.32%</td><td>43.5s</td><td>62%</td><td>23%</td></tr>
+              <tr><td>朋友圈广告</td><td>10.8%</td><td>2.10%</td><td>1.08%</td><td>38.2s</td><td>55%</td><td>28%</td></tr>
+              <tr><td>优量汇</td><td>6.5%</td><td>1.85%</td><td>0.95%</td><td>35.1s</td><td>52%</td><td>32%</td></tr>
+              <tr><td>激励视频</td><td>2.8%</td><td>1.55%</td><td>0.82%</td><td>32.5s</td><td>48%</td><td>38%</td></tr>
+              <tr><td>小程序广告</td><td>1.4%</td><td>1.62%</td><td>0.88%</td><td>36.8s</td><td>50%</td><td>35%</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <div class="bar-list">
-        <div class="bar-row"><span class="bar-label">痛点特写+价格锤</span><div class="bar-track"><div class="bar-fill pink-fill" style="width:40%"></div></div><span class="bar-num">40%</span></div>
-        <div class="bar-row"><span class="bar-label">美容师真人口播</span><div class="bar-track"><div class="bar-fill blue-fill" style="width:25%"></div></div><span class="bar-num">25%</span></div>
-        <div class="bar-row"><span class="bar-label">门店开业排队</span><div class="bar-track"><div class="bar-fill orange-fill" style="width:20%"></div></div><span class="bar-num">20%</span></div>
-        <div class="bar-row"><span class="bar-label">新闻播报式</span><div class="bar-track"><div class="bar-fill purple-fill" style="width:15%"></div></div><span class="bar-num">15%</span></div>
-        <div class="bar-row"><span class="bar-label">顾客日常见证</span><div class="bar-track"><div class="bar-fill green-fill" style="width:15%"></div></div><span class="bar-num">15%</span></div>
+    </section>
+
+    <!-- ========== 区块③：抗衰淡皱 ========== -->
+    <section class="cat-section" id="cat-kangshuai">
+      <div class="panel">
+        <div class="panel-head">
+          <div class="panel-title"><span class="dot pink-dot"></span>◐ 抗衰淡皱</div>
+          <div class="date-range light">细分：法令纹 / 抬头纹 / 苹果肌 / 双下巴</div>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card top-pink"><div class="kpi-head"><span class="kpi-label">爆量日均消耗</span></div><div class="kpi-value">¥5,128</div><div class="kpi-foot">Top100 中位数</div></div>
+          <div class="kpi-card top-green"><div class="kpi-head"><span class="kpi-label">平均CTR</span></div><div class="kpi-value">2.96<span class="kpi-unit">%</span></div><div class="kpi-foot">行业 2.85%</div></div>
+          <div class="kpi-card top-purple"><div class="kpi-head"><span class="kpi-label">平均浅层CVR</span></div><div class="kpi-value">1.42<span class="kpi-unit">%</span></div><div class="kpi-foot">行业 1.42%</div></div>
+          <div class="kpi-card top-orange"><div class="kpi-head"><span class="kpi-label">平均播放时长</span></div><div class="kpi-value">48.5<span class="kpi-unit">s</span></div><div class="kpi-foot">3秒完播 64% · 快滑 21%</div></div>
+        </div>
+
+        <div class="placement-table">
+          <div class="pt-title">📊 各版位表现</div>
+          <table>
+            <thead><tr><th>版位</th><th>消耗占比</th><th>CTR</th><th>浅层CVR</th><th>平均播放时长</th><th>3秒完播率</th><th>快滑率</th></tr></thead>
+            <tbody>
+              <tr><td>微信视频号信息流</td><td><b>75.2%</b></td><td>3.18%</td><td>1.55%</td><td>50.1s</td><td>66%</td><td>19%</td></tr>
+              <tr><td>朋友圈广告</td><td>13.5%</td><td>2.55%</td><td>1.28%</td><td>43.2s</td><td>59%</td><td>25%</td></tr>
+              <tr><td>优量汇</td><td>7.8%</td><td>2.22%</td><td>1.15%</td><td>39.5s</td><td>56%</td><td>29%</td></tr>
+              <tr><td>激励视频</td><td>2.1%</td><td>1.92%</td><td>0.98%</td><td>36.2s</td><td>51%</td><td>34%</td></tr>
+              <tr><td>小程序广告</td><td>1.4%</td><td>1.98%</td><td>1.05%</td><td>41.0s</td><td>54%</td><td>31%</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- ========== 区块④：淡化眼袋 ========== -->
+    <section class="cat-section" id="cat-yandai">
+      <div class="panel">
+        <div class="panel-head">
+          <div class="panel-title"><span class="dot pink-dot"></span>◉ 淡化眼袋</div>
+          <div class="date-range light">细分：混合型 / 泪沟型 / 松弛型 / 综合型</div>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card top-pink"><div class="kpi-head"><span class="kpi-label">爆量日均消耗</span></div><div class="kpi-value">¥7,674</div><div class="kpi-foot">Top100 中位数</div></div>
+          <div class="kpi-card top-green"><div class="kpi-head"><span class="kpi-label">平均CTR</span></div><div class="kpi-value">3.82<span class="kpi-unit">%</span></div><div class="kpi-foot">行业 2.85%</div></div>
+          <div class="kpi-card top-purple"><div class="kpi-head"><span class="kpi-label">平均浅层CVR</span></div><div class="kpi-value">1.65<span class="kpi-unit">%</span></div><div class="kpi-foot">行业 1.42%</div></div>
+          <div class="kpi-card top-orange"><div class="kpi-head"><span class="kpi-label">平均播放时长</span></div><div class="kpi-value">52.1<span class="kpi-unit">s</span></div><div class="kpi-foot">3秒完播 68% · 快滑 18%</div></div>
+        </div>
+
+        <div class="placement-table">
+          <div class="pt-title">📊 各版位表现</div>
+          <table>
+            <thead><tr><th>版位</th><th>消耗占比</th><th>CTR</th><th>浅层CVR</th><th>平均播放时长</th><th>3秒完播率</th><th>快滑率</th></tr></thead>
+            <tbody>
+              <tr><td>微信视频号信息流</td><td><b>76.5%</b></td><td>4.05%</td><td>1.78%</td><td>53.5s</td><td>70%</td><td>16%</td></tr>
+              <tr><td>朋友圈广告</td><td>12.2%</td><td>3.32%</td><td>1.48%</td><td>46.8s</td><td>62%</td><td>22%</td></tr>
+              <tr><td>优量汇</td><td>7.5%</td><td>2.95%</td><td>1.32%</td><td>42.1s</td><td>58%</td><td>27%</td></tr>
+              <tr><td>激励视频</td><td>2.5%</td><td>2.62%</td><td>1.15%</td><td>38.5s</td><td>54%</td><td>32%</td></tr>
+              <tr><td>小程序广告</td><td>1.3%</td><td>2.78%</td><td>1.22%</td><td>43.2s</td><td>56%</td><td>29%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 区块⑤：淡斑祛斑 ========== -->
+    <section class="cat-section" id="cat-danban">
+      <div class="panel">
+        <div class="panel-head">
+          <div class="panel-title"><span class="dot pink-dot"></span>✨ 淡斑祛斑</div>
+          <div class="date-range light">细分：色斑 / 晒斑 / 老年斑 / 混合斑</div>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card top-pink"><div class="kpi-head"><span class="kpi-label">爆量日均消耗</span></div><div class="kpi-value">¥4,213</div><div class="kpi-foot">Top100 中位数</div></div>
+          <div class="kpi-card top-green"><div class="kpi-head"><span class="kpi-label">平均CTR</span></div><div class="kpi-value">3.21<span class="kpi-unit">%</span></div><div class="kpi-foot">行业 2.85%</div></div>
+          <div class="kpi-card top-purple"><div class="kpi-head"><span class="kpi-label">平均浅层CVR</span></div><div class="kpi-value">1.58<span class="kpi-unit">%</span></div><div class="kpi-foot">行业 1.42%</div></div>
+          <div class="kpi-card top-orange"><div class="kpi-head"><span class="kpi-label">平均播放时长</span></div><div class="kpi-value">49.8<span class="kpi-unit">s</span></div><div class="kpi-foot">3秒完播 65% · 快滑 20%</div></div>
+        </div>
+
+        <div class="placement-table">
+          <div class="pt-title">📊 各版位表现</div>
+          <table>
+            <thead><tr><th>版位</th><th>消耗占比</th><th>CTR</th><th>浅层CVR</th><th>平均播放时长</th><th>3秒完播率</th><th>快滑率</th></tr></thead>
+            <tbody>
+              <tr><td>微信视频号信息流</td><td><b>74.8%</b></td><td>3.45%</td><td>1.72%</td><td>51.2s</td><td>67%</td><td>18%</td></tr>
+              <tr><td>朋友圈广告</td><td>13.0%</td><td>2.80%</td><td>1.42%</td><td>44.5s</td><td>60%</td><td>24%</td></tr>
+              <tr><td>优量汇</td><td>7.5%</td><td>2.45%</td><td>1.25%</td><td>40.2s</td><td>57%</td><td>28%</td></tr>
+              <tr><td>激励视频</td><td>3.0%</td><td>2.10%</td><td>1.05%</td><td>36.8s</td><td>52%</td><td>33%</td></tr>
+              <tr><td>小程序广告</td><td>1.7%</td><td>2.18%</td><td>1.12%</td><td>41.5s</td><td>55%</td><td>30%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 区块⑥：美发美甲 ========== -->
+    <section class="cat-section" id="cat-meifa">
+      <div class="panel">
+        <div class="panel-head">
+          <div class="panel-title"><span class="dot pink-dot"></span>✂ 美发美甲</div>
+          <div class="date-range light">细分：染发 / 烫发 / 美甲 / 美睫</div>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card top-pink"><div class="kpi-head"><span class="kpi-label">爆量日均消耗</span></div><div class="kpi-value">¥1,983</div><div class="kpi-foot">Top100 中位数</div></div>
+          <div class="kpi-card top-green"><div class="kpi-head"><span class="kpi-label">平均CTR</span></div><div class="kpi-value">2.18<span class="kpi-unit">%</span></div><div class="kpi-foot">行业 2.85%</div></div>
+          <div class="kpi-card top-purple"><div class="kpi-head"><span class="kpi-label">平均浅层CVR</span></div><div class="kpi-value">0.94<span class="kpi-unit">%</span></div><div class="kpi-foot">行业 1.42%</div></div>
+          <div class="kpi-card top-orange"><div class="kpi-head"><span class="kpi-label">平均播放时长</span></div><div class="kpi-value">38.5<span class="kpi-unit">s</span></div><div class="kpi-foot">3秒完播 58% · 快滑 27%</div></div>
+        </div>
+
+        <div class="placement-table">
+          <div class="pt-title">📊 各版位表现</div>
+          <table>
+            <thead><tr><th>版位</th><th>消耗占比</th><th>CTR</th><th>浅层CVR</th><th>平均播放时长</th><th>3秒完播率</th><th>快滑率</th></tr></thead>
+            <tbody>
+              <tr><td>微信视频号信息流</td><td><b>70.5%</b></td><td>2.38%</td><td>1.05%</td><td>40.2s</td><td>60%</td><td>25%</td></tr>
+              <tr><td>朋友圈广告</td><td>15.2%</td><td>1.92%</td><td>0.85%</td><td>35.5s</td><td>54%</td><td>30%</td></tr>
+              <tr><td>优量汇</td><td>9.8%</td><td>1.68%</td><td>0.72%</td><td>32.1s</td><td>50%</td><td>34%</td></tr>
+              <tr><td>激励视频</td><td>2.8%</td><td>1.45%</td><td>0.62%</td><td>29.5s</td><td>46%</td><td>40%</td></tr>
+              <tr><td>小程序广告</td><td>1.7%</td><td>1.55%</td><td>0.68%</td><td>33.8s</td><td>48%</td><td>37%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 区块⑦：美容SPA ========== -->
+    <section class="cat-section" id="cat-spa">
+      <div class="panel">
+        <div class="panel-head">
+          <div class="panel-title"><span class="dot pink-dot"></span>✦ 美容SPA</div>
+          <div class="date-range light">细分：面部护理 / 身体SPA / 肩颈 / 头疗</div>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card top-pink"><div class="kpi-head"><span class="kpi-label">爆量日均消耗</span></div><div class="kpi-value">¥2,471</div><div class="kpi-foot">Top100 中位数</div></div>
+          <div class="kpi-card top-green"><div class="kpi-head"><span class="kpi-label">平均CTR</span></div><div class="kpi-value">2.62<span class="kpi-unit">%</span></div><div class="kpi-foot">行业 2.85%</div></div>
+          <div class="kpi-card top-purple"><div class="kpi-head"><span class="kpi-label">平均浅层CVR</span></div><div class="kpi-value">1.18<span class="kpi-unit">%</span></div><div class="kpi-foot">行业 1.42%</div></div>
+          <div class="kpi-card top-orange"><div class="kpi-head"><span class="kpi-label">平均播放时长</span></div><div class="kpi-value">45.2<span class="kpi-unit">s</span></div><div class="kpi-foot">3秒完播 61% · 快滑 23%</div></div>
+        </div>
+
+        <div class="placement-table">
+          <div class="pt-title">📊 各版位表现</div>
+          <table>
+            <thead><tr><th>版位</th><th>消耗占比</th><th>CTR</th><th>浅层CVR</th><th>平均播放时长</th><th>3秒完播率</th><th>快滑率</th></tr></thead>
+            <tbody>
+              <tr><td>微信视频号信息流</td><td><b>72.8%</b></td><td>2.85%</td><td>1.32%</td><td>46.8s</td><td>63%</td><td>21%</td></tr>
+              <tr><td>朋友圈广告</td><td>13.5%</td><td>2.32%</td><td>1.05%</td><td>40.5s</td><td>57%</td><td>27%</td></tr>
+              <tr><td>优量汇</td><td>8.2%</td><td>2.05%</td><td>0.92%</td><td>36.8s</td><td>53%</td><td>31%</td></tr>
+              <tr><td>激励视频</td><td>3.5%</td><td>1.78%</td><td>0.82%</td><td>33.5s</td><td>49%</td><td>36%</td></tr>
+              <tr><td>小程序广告</td><td>2.0%</td><td>1.85%</td><td>0.88%</td><td>38.2s</td><td>52%</td><td>33%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
   </main>
 </div>
 
